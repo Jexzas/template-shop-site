@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Site</title>
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success text-end">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="px-1" id="mainLogo" src="logo.svg"><strong class="px-2 h2">Template Site</strong></a>
+          <button style="border:none;" id="navbar-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img style="width: 3em; border: none" src="menu.svg">
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" id="inventoryLink" aria-current="page" href="#inventory">Inventory</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="aboutLink" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="galleryLink" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="faqLink" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contactLink" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-lg-4" href="http://instagram.com/earth_hardy.js"><img id="instagramLogo" class="img-fluid" src="instagram.svg"/></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="content justify-content-center container-fluid">
+        <div id="home" class="text-center p-0 mx-auto">
+            <img id="brandLogo" src="logo.svg">
+        </div>
+        <div id="inventory" style="display: none">
+            <iframe id="inventoryManager" src="http://instagram.com/earth_hardy.js"></iframe>
+        </div>
+        <div id="about" style="display: none">
+            <ul id="aboutList" style="list-style: none;" class="justify-content-around mx-auto m-4">
+
+                <li><p>My name is ______ and I am a ____. My current inventory is available <a href="#inventory">here</a>, past works <a href="#gallery">here</a>, and you can email or message me on instagram regarding any specific piece you might want. <b>If you want a piece I have already sold, just email or DM me and we'll see if I can commission it for you! </b>I have a shop set up through square (on my inventory page), but you can also message me on instagram or by email to order something. Thanks for looking!</p></li>
+                <li><h3>For inquiries and payment: </h3></li>
+                <li><img class="contactLogo" src="Gmail_icon.svg"/>&nbsp; &nbsp;email@email.com</li>
+                <li><img class="contactLogo" src="Cash_App-Logo.wine.svg"/>&nbsp; &nbsp;$cashapptag</li>
+                
+            </ul>
+        </div>
+        <div id="gallery" class="container-fluid mx-auto col-11" style="display: none">
+            
+        </div>
+        <div id="faq" style="display: none">
+            <div class="row mx-auto" >
+                <ul style="list-style: none">
+                    <lh><h1>Frequently Asked Questions:</h1></lh>
+                </ul>
+            </div>
+        </div>
+        <div id="contact" style="display: none">
+            <section class="mb-4">
+
+                <!--Section heading-->
+                <div class="container w-100 override">
+                <h2 class="h1-responsive font-weight-bold text-center my-4">email me</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">let me know in your email how I can help!</p>
+                
+                <div class="row">
+                
+                    <!--Grid column-->
+                    <div class="col-md-9 mx-auto">
+                        <form id="contact-form" name="contact-form" method="POST">
+                
+                            <!--Grid row-->
+                            <div class="row">
+                
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="personName" name="name" class="form-control">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+                
+                
+                            </div>
+                            <!--Grid row-->
+                
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                
+                            <!--Grid row-->
+                            <div class="row">
+                
+                                <!--Grid column-->
+                                <div class="col-md-12">
+                
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                
+                        </form>
+                
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary" id="sendbox" onclick="emailForm()">Send</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+                
+                
+                
+                </div>
+                
+                </section>
+        </div>
+      </div>
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

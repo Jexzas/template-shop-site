@@ -1,0 +1,64 @@
+html * {
+    font-family: 'Merriweather', 'Roboto';
+}
+
+.nav-link {
+    font-size: 3em;
+}
+
+#brandLogo {
+    height: 80vh;
+    
+}
+
+#home img {
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 996px) {
+    .navbar-nav {
+        margin-left: 7em;
+    }
+}
+
+#inventoryManager {
+    width: 100vw;
+    height: 100vh;
+}
+
+#aboutList {
+    padding-left: 0;
+}
+
+#aboutList li {
+    padding: 10px;
+}
+
+.contactLogo {
+    width: 3em;
+}
+
+/* .content * {
+    text-transform: lowercase;
+} */
+
+.indented {
+    margin-left: 5em;
+}
+
+#instagramLogo {
+    width: 1em;
+}
+
+#gallery { 
+    width: 90vw;
+}
+
+.navbar-brand * { 
+    font-family: 'Unna', 'Merriweather'!important;
+    display: inline-flex;
+}
+
+#mainLogo {
+    width: 3em;
+}
